@@ -98,9 +98,9 @@ def calculationFunction(UI):
                     #is Ala
                 elif (codon[1] == "A"):
                     if (codon[2] == "U"):
-                        aminos.append("Asparagine")
+                        aminos.append("Aspartic Acid")
                     elif (codon[2] == "C"):
-                        aminos.append("Asparagine")
+                        aminos.append("Aspartic Acid")
                     else:
                         aminos.append("Glutamic acid")
                 else:

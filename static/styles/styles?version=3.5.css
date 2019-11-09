@@ -5,7 +5,6 @@ h1 {
 body {
   color: #191b1c;
   text-align: center;
-  border-style: groove;
 }
 
 input {
@@ -25,4 +24,23 @@ html {
 form {
   display:flex;
   flex-direction: row;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr)
+}
+
+.grid-container div {
+    border-style: solid;
+    overflow: hidden;
+    height:50px;
+}
+
+.grid-container div:hover {
+  height: 300px;
+}
+
+p {
+  color: #191b1c;
 }
