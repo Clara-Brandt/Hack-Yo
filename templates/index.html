@@ -10,15 +10,14 @@
     <h1>DNA to Protein Converter</h1>
     <p><b>Note:</b> Be sure to enter both the start and end codons</p>
     <br>
-    <label>Enter DNA to convert:</label>
+
     <form action="/dataEntered" method="post">
+      <label for:"input">Enter DNA to convert:</label>
       <input type="text" name="input"></input>
       <input type="submit" id="button"></input>
     </form>
     <br>
-    {{result}}
-
-
+    <p>{{ result }} </p>
 
   </body>
 </html>

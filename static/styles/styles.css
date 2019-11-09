@@ -5,6 +5,7 @@ h1 {
 body {
   color: #191b1c;
   text-align: center;
+  border-style: groove;
 }
 
 input {
@@ -19,4 +20,9 @@ button {
 
 html {
   background-color:#a4d3eb;
+}
+
+form {
+  display:flex;
+  flex-direction: row;
 }
