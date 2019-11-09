@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+    <meta charset="UTF-8">
+    <title>DNA to Protein Converter</title>
+  </head>
+
+  <body>
+    <h1>DNA to Protein Converter</h1>
+    <p><b>Note:</b> Be sure to enter both the start and end codons</p>
+    <br>
+    <label>Enter DNA to convert:</label>
+    <form action="/dataEntered" method="post">
+      <input type="text" name="input"></input>
+      <input type="submit" id="button"></input>
+    </form>
+    <br>
+    {{result}}
+
+
+
+  </body>
+</html>

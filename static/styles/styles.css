@@ -1,0 +1,22 @@
+h1 {
+  color:#191b1c;
+}
+
+body {
+  color: #191b1c;
+  text-align: center;
+}
+
+input {
+  border-radius: 25px;
+  padding: 5px;
+}
+
+button {
+  border-radius: 25px;
+  padding: 5px;
+}
+
+html {
+  background-color:#a4d3eb;
+}
