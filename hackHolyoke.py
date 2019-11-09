@@ -41,8 +41,81 @@ def main():
 
     else:
         # Marlena and Isabel's for loop
-        print(codonList)
+        aminos = []
+        for codon in c3:
+            if (codon[0:1] == "U"):
+                if (codon[1:2] == "U"):
+                    if (codon[2:3] == "G" or codon[2:3] == "A"):
+                           aminos.append("Leu")
+                    else:
+                        aminos.append("Phe")
+                if (codon[1:2] == "C"):
+                       aminos.append("Ser")
+                if (codon[1:2] == "A"):
+                    if (codon[2:3] == "A" or codon[2:3] == "G"):
+                        break
+                    else:
+                        aminos.append("Tyr")
+                if (codon[1:2] == "G"):
+                    if (codon[2:3] == "G"):
+                        aminos.append("Trp")
+                    elif (codon[2:3] == "A"):
+                        break
+                    else:
+                        aminos.append("Cys")
 
+            if (codon[0:1] == "A"):
+                if (codon[1:2] == "U"):
+                    if (codon[2:3] == "G"):
+                        aminos.append("Met")
+                    else:
+                        aminos.append("Ile")
+                if (codon[1:2] == "C"):
+                    aminos.append("Thr")
+                if (codon[1:2] == "A"):
+                    if (codon[2:3] == "A" or codon[2:3] == "G"):
+                        aminos.append("Lys")
+                    else:
+                        aminos.append("Asn")
+                if (codon[1:2] == "G"):
+                    if (codon[2:3] == "A" or codon[2:3] == "G"):
+                        aminos.append("Arg")
+                    else:
+                        aminos.append("Ser")
+            if (codon[0:1] == "G"):
+                if (codon[1:2] == "U"):
+                    aminos.append("Val")
+                    #everything that starts with GU
+                    #is Val
+                elif (codon[1:2] == "C"):
+                    aminos.append("Ala")
+                    #everything that starts with GC
+                    #is Ala
+                elif (codon[1:2] == "A"):
+                    if (codon[2:3] == "U"):
+                        aminos.append("Asp")
+                    elif (codon[2:3] == "C"):
+                        aminos.append("Asp")
+                    else:
+                        aminos.append("Glu")
+                else:
+                    aminos.append("Gly")
+            if (codon[0:1] == "C"):
+                if (codon[1:2] == "U"):
+                    aminos.append("Leu")
+                elif (codon[1:2] == "C"):
+                    aminos.append("Pro")
+                elif (codon[1:2] == "A"):
+                    if (codon[2:3] == "U"):
+                        aminos.append("His")
+                    elif (codon[2:3] == "C"):
+                        aminos.append("His")
+                    else:
+                        aminos.append("Gln")
+                else:
+                    aminos.append("Arg")
+        
+        result = amino 
 
 if __name__ == '__main__':
     main()
