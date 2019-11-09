@@ -9,7 +9,6 @@ def main():
         sequenceList = []
         invalidLetter = False
         invalidLetterCount = 0
-
         #Makes a list of the letters and finds the total number of nucleotides.
         for letter in sequence:
             if (letter != "A") and (letter != "U") and (letter != "C") and (letter != "G"):
@@ -26,7 +25,6 @@ def main():
             codon = sequenceList[start:(start+3)]
             codonList = codonList + [codon]
             start += 3
-
         #tests whether starting and ending codons are present
         finalCodon = codonList[codonCount-1]
 
