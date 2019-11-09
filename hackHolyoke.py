@@ -1,3 +1,6 @@
+from flask import request, redirect, Flask, render_template
+app = Flask(__name__, template_folder='templates')
+
 def main():
     sequence = input("Please enter your DNA sequence: ")
     sequence = sequence.upper()
@@ -114,8 +117,22 @@ def main():
                         aminos.append("Gln")
                 else:
                     aminos.append("Arg")
-        
-        result = amino 
+
+        result = amino
+
+@app.route('/dataEntered', methods = ['POST'])
+def dataEntered():
+    userInput = request.form['input']
+    # Probably call a function to do the calculations here
+    displayResult()
+    return redirect('/')
+
+@app.route("/")
+def displayResult():
+    RESULT = "hi"
+    # Replace RESULT with the actual result
+    return render_template('index.html', result=RESULT)
 
 if __name__ == '__main__':
+    app.run(debug=True)
     main()
